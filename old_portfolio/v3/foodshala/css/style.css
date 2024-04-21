@@ -1,0 +1,70 @@
+body{
+	font-family: 'Poppins', sans-serif !important;
+}
+.navbar .nav-item .nav-link{
+	padding:5px 10px;
+	border:1px solid white;
+	border-radius: 4px;
+	margin-right: 20px !important;
+}
+a{
+	color: inherit !important;
+}
+span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+.banner{
+	background-image: url('../assets/images/banner.jpg');
+	background-size: cover;
+	text-align: center;
+	padding:6rem 0;
+}
+.bg{
+	background-image: url('../assets/images/bg.jpg');
+	background-repeat:repeat;
+	text-align: center;
+	padding:6rem 0;
+}
+.banner div h1{
+	padding-bottom:45px 0;
+}
+.banner div h3{
+	padding:25px 0;
+}
+.searchSubmit{
+	padding:7px 20px;
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+	outline: none;
+}
+
+@media (max-width: 768px){
+	body{
+		font-size: 14px;
+	}
+	.navbar .nav-item .nav-link{
+		padding:4px 10px;
+		font-size: 14px;
+	}
+	#restaurantRegister .h4,#customerRegister .h4{
+		font-size: 20px;
+	}
+}
