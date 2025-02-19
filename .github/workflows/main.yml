@@ -20,14 +20,23 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      # - name: FTP-Deploy-Action
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      #   with:
+      #     server: 217.21.84.169
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     exclude: |
+      #       **/.git*
+      #       **/.git*/**
+
+      - name: Deploy Portfolio
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 217.21.84.169
+          server: ftpupload.net
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          exclude: |
-            **/.git*
-            **/.git*/**
+          local-dir: ./
+          server-dir: htdocs/
