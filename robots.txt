@@ -8,7 +8,8 @@ Disallow: /fonts
 Disallow: /images
 Disallow: /js
 Disallow: /foodshala
-Disallow: /old_portfolio
+Disallow: /intern_task
+Disallow: /old
 Disallow: /scss
 Disallow: /seed_forum
 Disallow: /seed

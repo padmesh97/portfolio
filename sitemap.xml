@@ -1,8 +1,37 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://padmeshkunwar.me</loc>
-		<changefreq> always </changefreq>
-		<priority> 1 </priority>
-	</url>
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://padmeshkunwar.me/</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://padmeshkunwar.me#about</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Page (if applicable) -->
+  <url>
+    <loc>https://blog.padmeshkunwar.me</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://padmeshkunwar.me#contact</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
