@@ -1,16 +1,15 @@
 <?php
-$ip = $_SERVER['REMOTE_ADDR'];
-$infoFromIp = json_decode(file_get_contents("http://ip-api.com/json/" . $ip), true);
-$status = $infoFromIp['status'];
-if($status == "success")
-{
-  date_default_timezone_set("Asia/Kolkata");
-  $text = "---".$ip." | ".$infoFromIp['country']." | ".$infoFromIp['city']." | ".$infoFromIp['zip']." | ".date('d-m-Y H:i:s')."---\n";
-  $fp = fopen('userlog.txt', 'a+');
-  fwrite($fp, $text);
-  fclose($fp);
-}
-?> 
+    $ip         = $_SERVER['REMOTE_ADDR'];
+    $infoFromIp = json_decode(file_get_contents("http://ip-api.com/json/" . $ip), true);
+    $status     = $infoFromIp['status'];
+    if ($status == "success") {
+        date_default_timezone_set("Asia/Kolkata");
+        $text = "---" . $ip . " | " . $infoFromIp['country'] . " | " . $infoFromIp['city'] . " | " . $infoFromIp['zip'] . " | " . date('d-m-Y H:i:s') . "---\n";
+        $fp   = fopen('userlog.txt', 'a+');
+        fwrite($fp, $text);
+        fclose($fp);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +38,7 @@ if($status == "success")
     gtag('js', new Date());
 
     gtag('config', 'UA-122721080-2');
-  </script> 
+  </script>
 
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#0a192f">
@@ -51,7 +50,7 @@ if($status == "success")
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
@@ -268,7 +267,7 @@ if($status == "success")
               <a class="nav-link" href="https://blog.padmeshkunwar.me">
                 <i class="fas fa-pen-fancy"></i> Blog
               </a>
-            </li> 
+            </li>
             <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" data-aos="fade-down" data-aos-once="true" data-aos-delay="400">
               <a class="nav-link" href="#skill">
                 <i class="fa fa-graduation-cap"></i> Skills
@@ -315,11 +314,11 @@ if($status == "success")
 
 
         <div class="col-12 col-md-10 d-flex flex-column justify-content-center">
-          
-          
-          
-          
-          
+
+
+
+
+
           <section id="home" style="margin-top: 1px;">
             <div class="fade-to-transparency"></div>
             <div class="row">
@@ -330,7 +329,7 @@ if($status == "success")
                     <img>
                   </div>
                 </div>
-              </div> 
+              </div>
 
               <div class="col-12 col-md-8">
                 <h1 class="color-primary ml-md-5 ml-1 pt-3 pt-md-1 text-gradient intro_list" data-aos="fade-up" data-aos-once="true" data-aos-delay="1100">Padmesh Kunwar</h1>
@@ -345,7 +344,7 @@ if($status == "success")
                 <a href="resume_download.php" alt="Resume" target="_blank" title="Resume" data-aos="fade-up" data-aos-once="true" data-aos-delay="1800" data-aos-anchor-placement="top-bottom" class="ml-md-5 ml-1 color-primary">
                   <button class="btn_2"><i class="las la-cloud-download-alt mr-3"></i>Resume</button>
                 </a>
-               
+
                 <!-- <div class="row">
                   <div class="col-12 col-lg-8 ml-md-4" style="padding-left: 5px">
                     <p class="intro color-primary" data-aos="fade-up" data-aos-once="true" data-aos-delay="1300" data-aos-anchor-placement="top-bottom">
@@ -461,7 +460,7 @@ if($status == "success")
               <div class="color-primary title text-gradient">Experience</div>
               <div class="divider"></div>
             </div>
-            
+
             <div class="row justify-content-md-center">
 
               <div id="projectCard" class="col-12 col-md-10" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-center" data-aos-delay="100">
@@ -616,11 +615,11 @@ if($status == "success")
               <div class="color-primary title text-gradient">Internships</div>
               <div class="divider"></div>
             </div>
-            
+
             <div class="row justify-content-md-center">
 
             <<OLD CONTENT HERE>>
-              
+
             </div>
           </section> -->
 
@@ -638,14 +637,14 @@ if($status == "success")
               <div class="color-coral skill_chips blue-bg"><i class="lab la-java"></i>Java</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-angular"></i>Angular</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-js-square"></i>Javascript</div>
-              
+
               <div class="color-coral skill_chips blue-bg"><i class="lab la-docker"></i>Docker</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-angular"></i>Kubernetes</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-redhat"></i>Openshift</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-aws"></i>AWS</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-linux"></i>Linux</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-jenkins"></i>Jenkins</div>
-              
+
               <div class="color-coral skill_chips blue-bg"><i class="las la-database"></i>Databases</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-git"></i>Git</div>
               <div class="color-coral skill_chips blue-bg"><i class="lab la-jira"></i>Jira</div>
@@ -696,11 +695,11 @@ if($status == "success")
                   </div>
                 </div>
               </div> -->
-            
+
             </div>
 
           </section>
-          
+
 
           <section id="articles" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-center" data-aos-delay="100">
             <div class="section_title_wrapper d-flex flex-row align-items-center">
@@ -827,10 +826,47 @@ if($status == "success")
               <div class="color-primary title text-gradient">Projects</div>
               <div class="divider"></div>
             </div>
-            
+
             <div class="row justify-content-md-center">
 
 
+              <div id="projectCard" class="col-12 col-md-10" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-center" data-aos-delay="100">
+                <div class="card">
+                  <div class="card-body blue-bg">
+                    <h4 class="card-title color-primary">Cosmos hub</h4>
+                    <div class="row" style="margin-bottom: 6px">
+                      <div class="col-12 col-md-8">
+                        <div class="remark">
+                          SELF PROJECT
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div class="timeline">
+                          Jan 2025
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="stack color-coral">
+                      <li>Angular</li>
+                      <li>Gen AI</li>
+                      <li>Prompt engineering</li>
+                      <li>php</li>
+                      <li>MySQL</li>
+                    </ul>
+                    <p class="color-primary">
+                      App feauring workflow automation tool that synthesizes granular tasks to perform AI driven execution to get them done. It also utilizes advanced prompt engineering techniques.
+                    </p>
+                    <div class="card-footer text-center mt-1">
+                      <a href="https://www.github.com/padmesh97/synflow" target="_blank" title="View github source">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://padmeshkunwar.me/synflow" target="_blank" title="Visit">
+                        <i class="fa fa-external-link-alt" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div id="projectCard" class="col-12 col-md-10" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-center" data-aos-delay="100">
                 <div class="card">
                   <div class="card-body blue-bg">
@@ -972,7 +1008,7 @@ if($status == "success")
                     <p class="color-primary">
                       A chat service using linux netcat between master container server and slave containers.
                     </p>
-                  
+
                     <div class="card-footer text-center mt-1">
                       <a href="https://www.github.com/seedjss/certi_module" target="_blank" title="View github source">
                         <i class="fab fa-github"></i>
@@ -987,7 +1023,7 @@ if($status == "success")
                     <div id="certi" style="display: none" class="youtube-video embed-responsive embed-responsive-16by9">
                       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gHXAqZcRH9s" allowfullscreen></iframe>
                     </div>
-                 
+
                   </div>
                 </div>
               </div> -->
@@ -1277,7 +1313,7 @@ if($status == "success")
                         <li>Sensors</li>
                       </ul>
                       <p class="color-primary">
-                        Build real time IoT based Smart Waste pickup system with driver portal and smart dustbin, both working coherently. 
+                        Build real time IoT based Smart Waste pickup system with driver portal and smart dustbin, both working coherently.
                       </p>
                       <div class="card-footer text-center mt-1">
                         <a href="https://github.com/padmesh97/iicdc2018" target="_blank" title="View github source">
@@ -1458,7 +1494,7 @@ if($status == "success")
         }, 800, function(){
           window.location.hash = hash;
         });
-      } 
+      }
     });
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1469,7 +1505,7 @@ if($status == "success")
     document.addEventListener('mousemove', (e) => {
         const aura = document.getElementById('aura');
         aura.style.display = 'block';
-        
+
         const mouseX = event.pageX;
         const mouseY = event.pageY;
         // Update the position of the custom glow pointer
