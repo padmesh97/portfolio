@@ -870,7 +870,7 @@
               <div id="projectCard" class="col-12 col-md-10" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-center" data-aos-delay="100">
                 <div class="card">
                   <div class="card-body blue-bg">
-                    <h4 class="card-title color-primary">Cosmos hub</h4>
+                    <h4 class="card-title color-primary">Cosmos</h4>
                     <div class="row" style="margin-bottom: 6px">
                       <div class="col-12 col-md-8">
                         <div class="remark">

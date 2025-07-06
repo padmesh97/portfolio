@@ -4,9 +4,9 @@ $infoFromIp = json_decode(file_get_contents("http://ip-api.com/json/" . $ip), tr
 $status     = $infoFromIp['status'];
 if ($status == "success") {
     date_default_timezone_set("Asia/Kolkata");
-    $text = "---" . $ip . " | " . $infoFromIp['country'] . " | " . $infoFromIp['city'] . " | " . $infoFromIp['zip'] . " | " . date('d-m-Y H:i:s') . " | cosmoshub.in/cosmos | " . "---\n";
+    $text = "---" . $ip . " | " . $infoFromIp['country'] . " | " . $infoFromIp['city'] . " | " . $infoFromIp['zip'] . " | " . date('d-m-Y H:i:s') . " | proj.padmeshkunwar.me/cosmos | " . "---\n";
     $fp   = fopen('../userlog.txt', 'a+');
     fwrite($fp, $text);
     fclose($fp);
 }
-header("location: https://cosmoshub.in/cosmos");
+header("location: https://proj.padmeshkunwar.me/cosmos");
