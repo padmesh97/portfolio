@@ -19,17 +19,17 @@
   <title>Padmesh Kunwar - Developer & Tech Evangelist</title>
 
   <!-- OG Tags -->
-  <meta property="og:title" content="Padmesh Kunwar - Full Stack Developer, DevOps Engineer & Tech Evangelist" />
-  <meta property="og:image" content="https://www.padmeshkunwar.me/images/dp_new.jpeg" />
+  <meta property="og:title" content="Padmesh K. - Full Stack Developer, DevOps Engineer & Tech Evangelist" />
+  <meta property="og:image" content="https://www.padmeshkunwar.me/images/og_tile.jpeg" />
   <meta property="og:url" content="https://www.padmeshkunwar.me/" />
   <meta property="og:site_name" content="padmeshkunwar.me" />
   <meta property="og:description" content="Discover my work in web development, AI, and cloud engineering." />
 
   <!-- Twitter card Tags -->
   <meta name="twitter:card" content="portfolio" />
-  <meta name="twitter:title" content="Padmesh Kunwar - Full Stack Developer, DevOps Engineer & Tech Evangelist" />
+  <meta name="twitter:title" content="Padmesh K. - Full Stack Developer, DevOps Engineer & Tech Evangelist" />
   <meta name="twitter:description" content="Discover my work in web development, AI, and cloud engineering." />
-  <meta name="twitter:image" content="ttps://www.padmeshkunwar.me/images/dp_new.jpeg" />
+  <meta name="twitter:image" content="ttps://www.padmeshkunwar.me/images/og_tile.jpeg" />
 
   <!-- Fallback description Tags -->
   <meta name="description" content="Discover my work in web development, AI, and cloud engineering.">
