@@ -27,7 +27,7 @@
   <meta property="og:description" content="Discover my work in web development, AI, and cloud engineering." />
 
   <!-- Twitter card Tags -->
-  <<meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Padmesh K. - Full Stack Developer, DevOps Engineer & Tech Evangelist" />
   <meta name="twitter:description" content="Discover my work in web development, AI, and cloud engineering." />
   <meta name="twitter:image" content="https://www.mozilla.org/media/img/firefox/home/fx-desktop.png" />
