@@ -16,7 +16,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Padmesh Kunwar" />
-  <title>Padmesh Kunwar - Developer & Tech Evangelist</title>
+  <title>Padmesh K. - Software Developer & Tech Evangelist</title>
 
   <!-- OG Tags -->
   <meta property="og:type" content="website" />
