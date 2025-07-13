@@ -18,11 +18,20 @@
   <meta name="author" content="Padmesh Kunwar" />
   <title>Padmesh Kunwar - Developer & Tech Evangelist</title>
 
+  <!-- OG Tags -->
   <meta property="og:title" content="Padmesh Kunwar - Full Stack Developer, DevOps Engineer & Tech Evangelist" />
   <meta property="og:image" content="https://www.padmeshkunwar.me/images/dp_new.jpeg" />
   <meta property="og:url" content="https://www.padmeshkunwar.me/" />
   <meta property="og:site_name" content="padmeshkunwar.me" />
   <meta property="og:description" content="Discover my work in web development, AI, and cloud engineering." />
+
+  <!-- Twitter card Tags -->
+  <meta name="twitter:card" content="portfolio" />
+  <meta name="twitter:title" content="Padmesh Kunwar - Full Stack Developer, DevOps Engineer & Tech Evangelist" />
+  <meta name="twitter:description" content="Discover my work in web development, AI, and cloud engineering." />
+  <meta name="twitter:image" content="ttps://www.padmeshkunwar.me/images/dp_new.jpeg" />
+
+  <!-- Fallback description Tags -->
   <meta name="description" content="Discover my work in web development, AI, and cloud engineering.">
 
   <link rel="icon" type="image/x-icon" href="favico.ico">
@@ -288,7 +297,7 @@
               <div class="col-12 d-md-none text-center" style="font-size: 32px">
                 <a class="mx-3 color-coral" href="https://www.linkedin.com/in/padmesh97" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a class="mx-3 color-coral" href="https://www.github.com/padmesh97" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="mx-3 color-coral" href="https://www.facebook.com/padmesh.97" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-3 color-coral" href="mailto:kunwarpadmesh@yahoo.com" target="_blank"><i class="lar la-envelope"></i></a>
               </div>
             </li>
           </ul>
@@ -306,7 +315,7 @@
             <ul class="color-primary">
               <li><a href="https://www.linkedin.com/in/padmesh97" target="_blank"><i class="fab fa-linkedin"></i></a></li>
               <li><a href="https://www.github.com/padmesh97" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.facebook.com/padmesh.97" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="mailto:kunwarpadmesh@yahoo.com" target="_blank"><i class="lar la-envelope"></i></a></li>
             </ul>
           </div>
         </div>
@@ -373,13 +382,10 @@
               <div class="divider"></div>
             </div>
             <p class="about_content color-secondary">
-              Hi, I'm Padmesh Kunwar, a <span class="color-coral">Software Developer at Barclays in Pune</span> with a passion for backend development. I thrive on tackling challenges and delivering high-quality solutions that make a real impact.
+              👨‍💻 I’m Padmesh, a software developer passionate about building scalable systems and clean, efficient code. From distributed systems to Gen AI, I enjoy turning complex ideas into reliable solutions that perform under pressure. Java spring boot and cloud-native tools are my go-to stack. My experience spans through Healthcare and Fintech domains.
             </p>
             <p class="about_content color-secondary">
-              When I'm not coding, I’m exploring new tech trends and pushing myself to learn and grow in this ever-evolving field. I believe in the power of innovation and the thrill of solving complex problems.
-            </p>
-            <p class="about_content color-secondary">
-              I graduated from JSSATE Noida in 2020 with a CGPA of 8.3, and since then, I've been honing my skills in backend technologies. My work is driven by a love for tech and a commitment to excellence.
+              ⚙️ With a strong focus on debugging, automation, and performance optimization, I take pride in delivering maintainable code and solving tough engineering problems. Whether it’s optimizing deployments or crafting intelligent workflows, I build with purpose - and a touch of curiosity.
             </p>
             <p class="about_content"><strong>My Achievements 🏆: </strong></p>
             <table class="col-md-10 offset-md-1 table color-secondary" data-aos="fade-up" data-aos-once="true" data-aos-delay="50" data-aos-anchor-placement="center-bottom">
@@ -1393,13 +1399,13 @@
               <div class="col-12 d-md-none text-center" style="font-size: 32px">
                 <a class="mx-3 color-coral" href="https://www.linkedin.com/in/padmesh97"  target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a class="mx-3 color-coral" href="https://www.github.com/padmesh/97" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="mx-3 color-coral" href="https://www.facebook.com/padmesh.97" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-3 color-coral" href="mailto:kunwarpadmesh@yahoo.com" target="_blank"><i class="lar la-envelope"></i></a>
               </div>
             </div>
           </section>
 
           <footer class="color-secondary">
-            Designed and Built by Padmesh Kunwar | 2024
+            Designed and Built by Padmesh Kunwar | 2025
           </footer>
 
         </div>
