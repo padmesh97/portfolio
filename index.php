@@ -255,10 +255,7 @@
                     <span class="chip">Bahmni</span>
                 </div>
                 <ul class="tl-list">
-                    <li>Single-handedly led migration of backend framework to the Bahmni open source medical record
-                        system, scaling PACS, ERP, and Lab management features.</li>
-                    <li>Integrated multiple services with existing architecture and contributed to the Bahmni community
-                        — identified and resolved <strong>5 bugs and workflow issues</strong>.</li>
+                    <li>Single-handedly led integration with Ayushman Bharat Digital Mission(ABDM), PACS, ERP, and Lab management features.</li>
                     <li>Developed robust REST APIs using Java Spring Boot and Hibernate.</li>
                     <li>Managed containerization and deployment on AWS — RDS, ECS, Route53, EC2, and CloudWatch.</li>
                 </ul>
@@ -313,7 +310,7 @@
                 <div class="ic-icon">🏆</div>
                 <div class="ic-num">05 · Hackathon</div>
                 <div class="ic-title">Barclays Hackathon Finalist</div>
-                <div class="ic-body">Achieved finalist position with my team in the prestigious internal Barclays
+                <div class="ic-body">Achieved finalist position with my team in internal Barclays
                     Hackathon, competing among top engineering talent across the organisation.</div>
             </div>
 

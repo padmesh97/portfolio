@@ -1,217 +1,549 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Padmesh Kunwar" />
-  <title>Maintenance</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Maintenance · Padmesh Kunwar</title>
+  <meta name="description" content="Oops! This page doesn't exist."/>
 
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Padmesh Kunwar | Personal website" />
-  <meta property="og:image" content="https://www.padmeshkunwar.me/images/dp.png" />
-  <meta property="og:url" content="https://www.padmeshkunwar.me/" />
-  <meta property="og:site_name" content="padmeshkunwar.me" />
-  <meta property="og:description" content="Hi, I am an aspiring Software Developer who is enthusiatic working in latest technologies." />
-  <link rel="icon" type="image/x-icon" href="favico.ico">
-  <link rel="apple-touch-startup-image" href="favico.ico">
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122721080-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <!-- OG Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Padmesh K. - Senior Software Engineer" />
+    <meta property="og:image" content="https://www.padmeshkunwar.me/images/dp_dark.png" />
+    <meta property="og:url" content="https://www.padmeshkunwar.me/" />
+    <meta property="og:site_name" content="padmeshkunwar.me" />
+    <meta property="og:description" content="Discover my work in software engineering, AI, and cloud architecture." />
 
-    gtag('config', 'UA-122721080-2');
-  </script>
+    <!-- Twitter card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Padmesh K. - Senior Software Engineer" />
+    <meta name="twitter:description" content="Discover my work in software engineering, AI, and cloud architecture." />
+    <meta name="twitter:image" content="https://www.padmeshkunwar.me/images/og_tile.png" />
 
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#0a192f">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#0a192f">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#0a192f">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
-  <style type="text/css">
-    #st-anim-maintenance {
-    width: 192px;
-    height: 192px;
-    margin: 128px auto;
-    margin-bottom: 2rem;
-    position: relative;
-  }
+    <link rel="icon" type="image/x-icon" href="./images/favico/android-chrome-512x512.png">
+    <link rel="apple-touch-startup-image" href="./images/favico/favicon.ico">
 
-  #st-anim-maintenance__shape {
-    left: 8px;
-    top: 3px;
-  }
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122721080-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  #st-anim-maintenance__gear-l {
-    position: absolute;
-    left: 42px;
-    top: 33px;
-    
-    animation: anim-spin-gear-l linear 6s;
-    animation-iteration-count: infinite;
-    transform-origin: 50% 50%;
-  }
+        gtag('config', 'UA-122721080-2');
+    </script>
 
-  @keyframes anim-spin-gear-l {
-    0%    { transform:  rotate(0deg) ; }
-    100%  { transform:  rotate(-360deg) ; }
-  }
 
-  #st-anim-maintenance__gear-s {
-    position: absolute;
-    left: 98px;
-    top: 80px;
-    
-    animation: anim-spin-gear-s linear 4.0s;
-    animation-iteration-count: infinite;
-    transform-origin: 50% 50%;
-  }
 
-  @keyframes anim-spin-gear-s {
-    0%    { transform:  rotate(0deg) ; }
-    100%  { transform:  rotate(360deg) ; }
-  }
+  <link rel="stylesheet" href="./css/style.css"/>
+  <style>
+    /* ── NEON EXTRAS (scoped to 404 only) ─────── */
+
+    /* Neon color vars layered on top of existing theme */
+    :root {
+      --neon-cyan:   #00f5ff;
+      --neon-green:  #39ff14;
+      --neon-pink:   #ff2d78;
+      --neon-purple: #bf5fff;
+      --neon-amber:  #ffb300;
+    }
+
+    /* Override bg for this page to go slightly darker/moodier even in light mode */
+    #pg404 {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 7rem 2rem 4rem;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    /* ── BIG 404 GLITCH TEXT ──────────────────── */
+    .err-code {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: clamp(7rem, 22vw, 18rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      color: transparent;
+      -webkit-text-stroke: 2px var(--text);
+      position: relative;
+      user-select: none;
+      animation: glitchShift 5s infinite;
+    }
+
+    /* Neon glow layers via pseudo-elements */
+    .err-code::before,
+    .err-code::after {
+      content: 'Maintenance time...';
+      position: absolute;
+      inset: 0;
+      -webkit-text-stroke: 2px transparent;
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+    }
+    .err-code::before {
+      color: var(--neon-cyan);
+      text-shadow:
+        0 0 8px  var(--neon-cyan),
+        0 0 20px var(--neon-cyan),
+        0 0 50px var(--neon-cyan);
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+      animation: glitchTop 5s infinite;
+    }
+    .err-code::after {
+      color: var(--neon-pink);
+      text-shadow:
+        0 0 8px  var(--neon-pink),
+        0 0 20px var(--neon-pink),
+        0 0 50px var(--neon-pink);
+      clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+      animation: glitchBot 5s infinite;
+    }
+
+    @keyframes glitchTop {
+      0%, 90%, 100% { transform: translate(0, 0); opacity: 1; }
+      92%            { transform: translate(-4px, -2px); opacity: 0.8; }
+      94%            { transform: translate(4px, 2px);  opacity: 0.6; }
+      96%            { transform: translate(-2px, 1px); opacity: 0.9; }
+    }
+    @keyframes glitchBot {
+      0%, 90%, 100% { transform: translate(0, 0); opacity: 1; }
+      93%            { transform: translate(4px, 2px);  opacity: 0.7; }
+      95%            { transform: translate(-4px, -2px); opacity: 0.5; }
+      97%            { transform: translate(2px, -1px); opacity: 0.9; }
+    }
+    @keyframes glitchShift {
+      0%, 89%, 100% { transform: skewX(0deg); }
+      91%            { transform: skewX(-1.5deg); }
+      93%            { transform: skewX(1.5deg); }
+      95%            { transform: skewX(0deg); }
+    }
+
+    /* ── SCANLINE OVERLAY (extra dense for 404 mood) */
+    #pg404::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent, transparent 2px,
+        rgba(0,245,255,0.025) 2px, rgba(0,245,255,0.025) 4px
+      );
+      pointer-events: none;
+      z-index: 0;
+      animation: scanMove 8s linear infinite;
+    }
+    @keyframes scanMove {
+      from { background-position: 0 0; }
+      to   { background-position: 0 80px; }
+    }
+
+    /* ── NEON RING BEHIND 404 ─────────────────── */
+    .err-ring {
+      position: absolute;
+      width: clamp(280px, 50vw, 600px);
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      border: 1px solid rgba(0,245,255,0.15);
+      box-shadow:
+        0 0 30px rgba(0,245,255,0.08),
+        0 0 80px rgba(0,245,255,0.05),
+        inset 0 0 30px rgba(0,245,255,0.04);
+      animation: ringPulse 4s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .err-ring-2 {
+      width: clamp(200px, 38vw, 450px);
+      border-color: rgba(255,45,120,0.12);
+      box-shadow:
+        0 0 30px rgba(255,45,120,0.06),
+        0 0 80px rgba(255,45,120,0.04),
+        inset 0 0 30px rgba(255,45,120,0.03);
+      animation: ringPulse 6s ease-in-out infinite reverse;
+    }
+    @keyframes ringPulse {
+      0%,100% { transform: scale(1);   opacity: 1; }
+      50%      { transform: scale(1.04); opacity: 0.6; }
+    }
+
+    /* ── CONTENT BELOW 404 ───────────────────── */
+    .err-content { position: relative; z-index: 1; }
+
+    .err-mono {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--neon-cyan);
+      text-shadow: 0 0 10px var(--neon-cyan), 0 0 25px var(--neon-cyan);
+      margin-bottom: 1.25rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.3s forwards;
+    }
+
+    .err-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      color: var(--text);
+      letter-spacing: -0.025em;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.5s forwards;
+    }
+
+    .err-desc {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(0.9rem, 2vw, 1.05rem);
+      color: var(--text2);
+      max-width: 460px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.7s forwards;
+    }
+
+    .err-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.9s forwards;
+    }
+
+    /* Neon-glowing primary button override for this page */
+    .btn-neon {
+      background: transparent;
+      color: var(--neon-cyan);
+      border: 1.5px solid var(--neon-cyan);
+      box-shadow:
+        0 0 8px  rgba(0,245,255,0.4),
+        0 0 20px rgba(0,245,255,0.2),
+        inset 0 0 12px rgba(0,245,255,0.05);
+      text-shadow: 0 0 8px var(--neon-cyan);
+      transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .btn-neon:hover {
+      background: rgba(0,245,255,0.08);
+      box-shadow:
+        0 0 14px rgba(0,245,255,0.7),
+        0 0 40px rgba(0,245,255,0.35),
+        inset 0 0 20px rgba(0,245,255,0.1);
+      transform: translateY(-3px) scale(1.04);
+    }
+
+    .btn-neon-pink {
+      background: transparent;
+      color: var(--neon-pink);
+      border: 1.5px solid var(--neon-pink);
+      box-shadow:
+        0 0 8px  rgba(255,45,120,0.4),
+        0 0 20px rgba(255,45,120,0.2),
+        inset 0 0 12px rgba(255,45,120,0.05);
+      text-shadow: 0 0 8px var(--neon-pink);
+      transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .btn-neon-pink:hover {
+      background: rgba(255,45,120,0.08);
+      box-shadow:
+        0 0 14px rgba(255,45,120,0.7),
+        0 0 40px rgba(255,45,120,0.35),
+        inset 0 0 20px rgba(255,45,120,0.1);
+      transform: translateY(-3px) scale(1.04);
+    }
+
+    /* ── TERMINAL BLOCK ──────────────────────── */
+    .err-terminal {
+      margin: 3rem auto 0;
+      max-width: 480px;
+      background: var(--bg3);
+      border: 1px solid var(--border2);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(0,245,255,0.08),
+        0 8px 32px var(--shadow, rgba(0,0,0,0.1)),
+        0 0 40px rgba(0,245,255,0.04);
+      opacity: 0;
+      animation: fadeUp 0.7s 1.1s forwards;
+    }
+    .term-bar {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 16px;
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+    }
+    .term-dot {
+      width: 11px; height: 11px; border-radius: 50%;
+    }
+    .term-dot:nth-child(1) {
+      background: #ff5f57;
+      box-shadow: 0 0 6px rgba(255,95,87,0.7);
+    }
+    .term-dot:nth-child(2) {
+      background: #febc2e;
+      box-shadow: 0 0 6px rgba(254,188,46,0.7);
+    }
+    .term-dot:nth-child(3) {
+      background: #28c840;
+      box-shadow: 0 0 6px rgba(40,200,64,0.7);
+    }
+    .term-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--text3);
+      letter-spacing: 0.15em;
+      margin-left: auto;
+    }
+    .term-body {
+      padding: 1.25rem 1.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      line-height: 2;
+      text-align: left;
+    }
+    .term-line { display: flex; gap: 10px; }
+    .term-prompt { color: var(--neon-green); text-shadow: 0 0 8px var(--neon-green); }
+    .term-cmd    { color: var(--text2); }
+    .term-out    {
+      color: var(--neon-pink);
+      text-shadow: 0 0 6px rgba(255,45,120,0.5);
+      padding-left: 20px;
+    }
+    .term-out-dim { color: var(--text3); padding-left: 20px; }
+    .term-cursor {
+      display: inline-block;
+      width: 7px; height: 1.1em;
+      background: var(--neon-cyan);
+      box-shadow: 0 0 8px var(--neon-cyan);
+      vertical-align: middle;
+      margin-left: 2px;
+      animation: blink 1s step-end infinite;
+    }
+
+    /* ── FLOATING NEON PARTICLES ─────────────── */
+    .particles {
+      position: absolute; inset: 0;
+      pointer-events: none; z-index: 0; overflow: hidden;
+    }
+    .p {
+      position: absolute;
+      border-radius: 50%;
+      animation: floatP var(--dur, 8s) ease-in-out infinite;
+      animation-delay: var(--delay, 0s);
+    }
+    @keyframes floatP {
+      0%,100% { transform: translateY(0) scale(1);   opacity: var(--op, 0.5); }
+      50%      { transform: translateY(-30px) scale(1.2); opacity: calc(var(--op, 0.5) * 0.4); }
+    }
+
+    /* Dark theme: intensify neons */
+    [data-theme="dark"] .err-code {
+      -webkit-text-stroke-color: rgba(255,255,255,0.15);
+    }
+    [data-theme="dark"] .err-code::before {
+      text-shadow:
+        0 0 10px  var(--neon-cyan),
+        0 0 30px  var(--neon-cyan),
+        0 0 80px  var(--neon-cyan),
+        0 0 140px rgba(0,245,255,0.4);
+    }
+    [data-theme="dark"] .err-code::after {
+      text-shadow:
+        0 0 10px  var(--neon-pink),
+        0 0 30px  var(--neon-pink),
+        0 0 80px  var(--neon-pink),
+        0 0 140px rgba(255,45,120,0.4);
+    }
+    [data-theme="dark"] .err-mono {
+      text-shadow: 0 0 14px var(--neon-cyan), 0 0 40px var(--neon-cyan);
+    }
+    [data-theme="dark"] .err-terminal {
+      box-shadow:
+        0 0 0 1px rgba(0,245,255,0.15),
+        0 8px 32px rgba(0,0,0,0.4),
+        0 0 60px rgba(0,245,255,0.07);
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .err-actions { flex-direction: column; align-items: center; }
+      .btn { justify-content: center; }
+    }
   </style>
 </head>
-<body class="color-secondary" style="overflow:hidden">
+<body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar dark-blue-bg">
-      <a class="navbar-brand" href="#" style="margin-left:3%;" data-aos="fade-down" data-aos-once="true" data-aos-delay="50">
-        <img src="images/logo.svg" height="45" alt="Padmesh Kunwar portfolio" >
-      </a>
-      <!-- <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-      </button> -->
+<!-- ══ NAV ══════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">PK<span class="cursor"></span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#home">Home</a></li>
+    <li><a href="../index.html#experience">Experience</a></li>
+    <li><a href="../index.html#impact">Impact</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+      <span class="t-icon sun">☀</span>
+      <span class="t-icon moon">☽</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent23">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item" data-aos="fade-down" data-aos-once="true" data-aos-delay="50">
-            <!-- <a class="nav-link" href="index.php">
-              <i class="fa fa-info-circle"></i> Home
-            </a> -->
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<!-- Mobile Nav -->
+<ul class="mob-menu" id="mobMenu">
+  <li><a href="../index.html#home"       class="m-link">Home</a></li>
+  <li><a href="../index.html#experience" class="m-link">Experience</a></li>
+  <li><a href="../index.html#impact"     class="m-link">Impact</a></li>
+  <li><a href="../index.html#skills"     class="m-link">Skills</a></li>
+  <li><a href="../index.html#projects"   class="m-link">Projects</a></li>
+  <li><a href="../index.html#contact"    class="m-link">Contact</a></li>
+</ul>
 
-  <div class="container-fluid">
-    <div class="row">
+<!-- ══ 404 PAGE ══════════════════════════════════ -->
+<div id="pg404">
 
+  <!-- Neon ambient rings -->
+  <div class="err-ring"></div>
+  <div class="err-ring err-ring-2"></div>
 
-
-      <div class="col-md-1 d-none d-md-block">
-        <div class="left-list" data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="100">
-          <ul class="color-primary">
-            <li><a href="https://www.github.com/padmesh/97"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/padmesh97"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.facebook.com/padmesh.97"><i class="fab fa-facebook-f"></i></a></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="col-12 col-md-10">
-        <center>
-          <div id="st-anim-maintenance">
-            <svg id="st-anim-maintenance__shape" width="176" height="188" xmlns="http://www.w3.org/2000/svg"><path d="M175.077 93.71c-6.255 95.573-79.776 93.788-85.377 93.788-1.95 0-2.728-2.261 0-3.896 9.75-5.844 17.55-13.635 19.5-27.27 0-.975 0-1.948-1.95-1.948H71.88c-18.08 0-29.789-2.894-39.958-8.326-10.168-5.433-18.15-13.405-23.587-23.562C2.896 112.338 0 100.64 0 82.58V72.303c0-18.06 2.896-29.757 8.335-39.915 5.438-10.158 13.419-18.13 23.587-23.562C42.092 3.393 53.8.5 71.881.5h31.738c18.08 0 29.79 2.893 39.959 8.326 10.168 5.432 18.15 13.404 23.587 23.562 5.439 10.158 8.335 21.854 8.335 39.915V82.58c0 4.006-.142 7.698-.423 11.13z" fill="#1b365e" fill-rule="evenodd"/></svg>
-
-            <svg id="st-anim-maintenance__gear-l" width="74" height="74" xmlns="http://www.w3.org/2000/svg"><path d="M30.87 73.078a36.582 36.582 0 0 1-6.679-1.83l.642-7.668a29.467 29.467 0 0 1-4.895-2.87l-6.277 4.38a36.906 36.906 0 0 1-4.901-4.95l4.372-6.313a29.215 29.215 0 0 1-2.79-4.889l-7.619.642a36.261 36.261 0 0 1-1.765-6.773l6.947-3.281a29.527 29.527 0 0 1 .047-5.539L1.04 30.723a36.254 36.254 0 0 1 1.875-6.796l7.66.645a29.24 29.24 0 0 1 2.742-4.642l-4.36-6.295a36.91 36.91 0 0 1 5.048-4.993l6.305 4.397a29.46 29.46 0 0 1 4.566-2.625l-.642-7.664A36.586 36.586 0 0 1 31.097.897l3.26 6.953a29.965 29.965 0 0 1 5.286-.044L42.92.819a36.6 36.6 0 0 1 6.842 1.744l-.638 7.625c1.692.742 3.3 1.638 4.807 2.67l6.324-4.411a36.914 36.914 0 0 1 5.003 4.848l-4.342 6.27a29.254 29.254 0 0 1 2.99 4.965l7.665-.646a36.251 36.251 0 0 1 1.85 6.611l-6.898 3.258a29.464 29.464 0 0 1 .052 6.01l6.93 3.272a36.258 36.258 0 0 1-1.743 6.588l-7.623-.642a29.229 29.229 0 0 1-3.036 5.215l4.354 6.287a36.91 36.91 0 0 1-4.855 4.803l-6.296-4.391a29.454 29.454 0 0 1-5.14 2.912l.638 7.629a36.596 36.596 0 0 1-6.656 1.723l-3.268-6.97a29.989 29.989 0 0 1-5.757-.048l-3.252 6.937zm6.38-25.346c5.902 0 10.686-4.802 10.686-10.725S43.152 26.282 37.25 26.282s-10.686 4.802-10.686 10.725 4.784 10.725 10.686 10.725z" fill="#FFF" fill-rule="evenodd"/></svg>
-
-            <svg id="st-anim-maintenance__gear-s" width="52" height="52" xmlns="http://www.w3.org/2000/svg"><path d="M26.574 51.12a25.828 25.828 0 0 1-6.987-.806l-.773-5.561a20.566 20.566 0 0 1-5.335-2.949l-5.16 2.291a24.947 24.947 0 0 1-4.368-5.503l3.426-4.504a20.085 20.085 0 0 1-1.59-5.725L.53 26.373a24.97 24.97 0 0 1 .895-7.045l5.638-.799a20.58 20.58 0 0 1 2.849-4.99L7.623 8.42a25.83 25.83 0 0 1 5.664-4.467l4.513 3.37a21.177 21.177 0 0 1 5.52-1.63L25.375.406a25.832 25.832 0 0 1 7.11.683l.766 5.51a20.59 20.59 0 0 1 5.397 2.825l5.21-2.313a24.978 24.978 0 0 1 4.412 5.337L44.884 16.9a20.047 20.047 0 0 1 1.822 6.166l5.266 1.994a24.956 24.956 0 0 1-.808 6.798l-5.597.793a20.577 20.577 0 0 1-3.193 5.595l2.272 5.085a25.83 25.83 0 0 1-5.498 4.266l-4.52-3.376a21.183 21.183 0 0 1-6.023 1.676l-2.031 5.224zm1.722-18.234c3.975-1.14 6.282-5.256 5.153-9.195-1.13-3.939-5.268-6.208-9.243-5.068-3.975 1.14-6.282 5.257-5.152 9.196 1.13 3.938 5.267 6.207 9.242 5.067z" fill="#FFF" fill-rule="evenodd"/></svg>
-          </div>
-          <h3  class="color-primary" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">Currently Under Maintenance. Please check back later.
-          </h3>
-        </center>
-      </div>
-
-
-      <div class="col-md-1 d-none d-md-block">
-        <div class="right-list" data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="100">
-          <div class="wrapper">
-            <a class="color-primary" href="mailto:kunwarpadmesh@yahoo.com">
-              kunwarpadmesh@yahoo.com
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    <footer class="color-secondary" style="position: absolute;bottom: 0;margin-left: -0.5rem">
-      Designed and Built by Padmesh Kunwar
-      <br>
-      &copy;&nbsp;2021
-    </footer>
+  <!-- Floating neon particles -->
+  <div class="particles">
+    <div class="p" style="width:4px;height:4px;background:var(--neon-cyan);top:18%;left:12%;
+         box-shadow:0 0 8px var(--neon-cyan);--dur:7s;--delay:0s;--op:0.55"></div>
+    <div class="p" style="width:3px;height:3px;background:var(--neon-pink);top:72%;left:80%;
+         box-shadow:0 0 8px var(--neon-pink);--dur:9s;--delay:1.5s;--op:0.5"></div>
+    <div class="p" style="width:5px;height:5px;background:var(--neon-green);top:30%;left:85%;
+         box-shadow:0 0 10px var(--neon-green);--dur:11s;--delay:0.8s;--op:0.4"></div>
+    <div class="p" style="width:3px;height:3px;background:var(--neon-purple);top:65%;left:15%;
+         box-shadow:0 0 8px var(--neon-purple);--dur:8s;--delay:2s;--op:0.45"></div>
+    <div class="p" style="width:6px;height:6px;background:var(--neon-amber);top:82%;left:48%;
+         box-shadow:0 0 10px var(--neon-amber);--dur:10s;--delay:3s;--op:0.35"></div>
+    <div class="p" style="width:2px;height:2px;background:var(--neon-cyan);top:50%;left:5%;
+         box-shadow:0 0 6px var(--neon-cyan);--dur:13s;--delay:0.5s;--op:0.4"></div>
+    <div class="p" style="width:4px;height:4px;background:var(--neon-pink);top:10%;left:60%;
+         box-shadow:0 0 8px var(--neon-pink);--dur:6s;--delay:4s;--op:0.45"></div>
   </div>
 
+  <!-- Big 404 -->
+  <div class="err-code" style="position:relative;z-index:1">Maintenance time...</div>
 
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript">
-    $( document ).ready(function() {
+  <!-- Content -->
+  <div class="err-content">
+    <br/>
+    <div class="err-mono">// error occured</div>
 
-      $('.second-button').on('click', function () {
-          $('.animated-icon2').toggleClass('open');
-      });
+    <h1 class="err-title">Lost in the void?</h1>
 
-      var selector = '.nav-link';
-      $(selector).on('click', function(){
-          $(selector).removeClass('active');
-          $(this).addClass('active');
-      });
+    <p class="err-desc">
+      The page you're looking for doesn't exist, was moved, or maybe it never did.
+    </p>
 
+    <div class="err-actions">
+      <a href="../index.html" class="btn btn-neon">
+        ← Back to Home
+      </a>
+      <a href="../../index.php#contact" class="btn btn-neon-pink">
+        Report Issue
+      </a>
+    </div>
+
+    <!-- Terminal block -->
+    <!-- <div class="err-terminal">
+      <div class="term-bar">
+        <div class="term-dot"></div>
+        <div class="term-dot"></div>
+        <div class="term-dot"></div>
+        <span class="term-title">bash — padmesh@portfolio</span>
+      </div>
+      <div class="term-body">
+        <div class="term-line">
+          <span class="term-prompt">~$</span>
+          <span class="term-cmd">curl https://padmesh.dev<span id="typed-path"></span></span>
+        </div>
+        <div class="term-line" style="margin-top:4px">
+          <span class="term-out">Error 404: Not Found</span>
+        </div>
+        <div class="term-line">
+          <span class="term-out-dim">→ Suggestion: navigate to /home</span>
+        </div>
+        <div class="term-line" style="margin-top:4px">
+          <span class="term-prompt">~$</span>
+          <span class="term-cmd"><span class="term-cursor"></span></span>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+
+<!-- ══ FOOTER ════════════════════════════════════ -->
+<footer>
+  <span class="f-txt">© 2026 Padmesh Kunwar</span>
+  <!-- <div class="f-tags">
+    <span class="f-tag">Error</span>
+    <span class="f-tag">404</span>
+    <span class="f-tag">Not Found</span>
+  </div> -->
+</footer>
+
+<!-- ══ JS ════════════════════════════════════════ -->
+<script>
+  /* ── Theme (mirrors main site) ── */
+  const html = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  html.setAttribute('data-theme', localStorage.getItem('pk-theme') || 'light');
+  themeBtn.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('pk-theme', next);
+  });
+
+  /* ── Mobile Nav ── */
+  const hbg = document.getElementById('hamburger');
+  const mobMenu = document.getElementById('mobMenu');
+  hbg.addEventListener('click', () => {
+    hbg.classList.toggle('open');
+    mobMenu.classList.toggle('open');
+  });
+  document.querySelectorAll('.m-link').forEach(a => {
+    a.addEventListener('click', () => {
+      hbg.classList.remove('open');
+      mobMenu.classList.remove('open');
     });
-    function expand(a)
-    {
-      $("#"+a).animate({
-        height:'toggle'
-      });
+  });
+
+  /* ── Type the current bad path into terminal ── */
+  const typedEl = document.getElementById('typed-path');
+  const path = window.location.pathname.replace(/.*\//, '/') || '/???';
+  let i = 0;
+  const typeIt = () => {
+    if (i <= path.length) {
+      typedEl.textContent = path.slice(0, i);
+      i++;
+      setTimeout(typeIt, 80);
     }
-  </script>
-  <script>
-    $(document).ready(function(){
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-            window.location.hash = hash;
-          });
-        } 
-      });
-    });
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="text/javascript">
-    AOS.init();
-  </script>
-  
+  };
+  setTimeout(typeIt, 1400);
+</script>
+
 </body>
 </html>
