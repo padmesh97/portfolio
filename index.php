@@ -252,7 +252,6 @@
                     <span class="chip">EC2</span>
                     <span class="chip">Route53</span>
                     <span class="chip">CloudWatch</span>
-                    <span class="chip">Bahmni</span>
                 </div>
                 <ul class="tl-list">
                     <li>Single-handedly led integration with Ayushman Bharat Digital Mission(ABDM), PACS, ERP, and Lab management features.</li>
