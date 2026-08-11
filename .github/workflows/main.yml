@@ -23,6 +23,7 @@ jobs:
       - name: Checkout latest code
         uses: actions/checkout@v4
 
+      # This is old implementation of FTP deploy action. It is not recommended to use this version. Use the latest version below.
       # - name: FTP-Deploy-Action
       #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       #   with:
@@ -33,11 +34,13 @@ jobs:
       #       **/.git*
       #       **/.git*/**
 
-      - name: Deploy Portfolio
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ftpupload.net
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: htdocs/
+
+      # UNCOMMENT BELOW TO DEPLOY PORTFOLIO WEBSITE TO FTP SERVER (WORKING) >>>>>>>>>
+      # - name: Deploy Portfolio
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      #   with:
+      #     server: ftpupload.net
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     local-dir: ./
+      #     server-dir: htdocs/
