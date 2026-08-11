@@ -36,11 +36,11 @@ jobs:
 
 
       # UNCOMMENT BELOW TO DEPLOY PORTFOLIO WEBSITE TO FTP SERVER (WORKING) >>>>>>>>>
-      - name: Deploy Portfolio
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ftpupload.net
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: htdocs/
+      # - name: Deploy Portfolio
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      #   with:
+      #     server: ftpupload.net
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     local-dir: ./
+      #     server-dir: htdocs/
