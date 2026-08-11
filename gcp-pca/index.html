@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP Professional Cloud Architect — Padmesh Kunwar</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6RZX90HV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        // GA4 automatically records the page_view and referrer information.
+        gtag('config', 'G-DX6RZX90HV', {
+            page_title: 'GCP Professional Cloud Architect Redirect',
+            page_location: window.location.href
+        });
+
+        const CREDLY_URL =
+            'https://www.credly.com/badges/45b0d865-e792-483c-b723-74f57ae08af1';
+
+        let redirected = false;
+
+        function redirectToCredly() {
+            if (redirected) return;
+            redirected = true;
+
+            // replace() prevents the intermediate redirect page from being added
+            // to the browser history.
+            window.location.replace(CREDLY_URL);
+        }
+
+        // Explicit event so this redirect can be identified separately in GA4.
+        gtag('event', 'certificate_redirect', {
+            certificate: 'gcp_professional_cloud_architect',
+            destination: CREDLY_URL,
+            transport_type: 'beacon',
+            event_callback: redirectToCredly,
+            event_timeout: 1000
+        });
+
+        // Fallback: redirect even when GA is blocked or unavailable.
+        setTimeout(redirectToCredly, 1200);
+    </script>
+
+    <!-- Fallback for browsers with JavaScript disabled -->
+    <noscript>
+        <meta http-equiv="refresh"
+              content="0;url=https://www.credly.com/badges/45b0d865-e792-483c-b723-74f57ae08af1">
+    </noscript>
+</head>
+<body>
+    <main style="font-family:system-ui,sans-serif;text-align:center;padding:4rem 1.5rem">
+        <h1>Redirecting…</h1>
+        <p>
+            <a href="https://www.credly.com/badges/45b0d865-e792-483c-b723-74f57ae08af1">
+                Continue to URL
+            </a>
+        </p>
+    </main>
+</body>
+</html>
