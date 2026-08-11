@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DX6RZX90HV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DX6RZX90HV');
+    </script>
     <title>Padmesh Kunwar — Software Engineer</title>
     <meta name="description" content="Software Engineer · Distributed Systems · DevOps · Gen AI" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -50,14 +58,14 @@
 
     <!-- ══ NAV ══════════════════════════════════════ -->
     <nav id="navbar">
-        <a href="#home" class="nav-logo">PK<span class="cursor"></span></a>
+        <a href="#home" class="nav-logo" data-ga-event="navigation_click" data-ga-label="Home logo">PK<span class="cursor"></span></a>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#impact">Impact</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="active" data-ga-event="navigation_click" data-ga-label="Home">Home</a></li>
+            <li><a href="#experience" data-ga-event="navigation_click" data-ga-label="Experience">Experience</a></li>
+            <li><a href="#impact" data-ga-event="navigation_click" data-ga-label="Impact">Impact</a></li>
+            <li><a href="#skills" data-ga-event="navigation_click" data-ga-label="Skills">Skills</a></li>
+            <li><a href="#projects" data-ga-event="navigation_click" data-ga-label="Projects">Projects</a></li>
+            <li><a href="#contact" data-ga-event="navigation_click" data-ga-label="Contact">Contact</a></li>
         </ul>
         <div class="nav-right">
             <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
@@ -72,12 +80,12 @@
 
     <!-- Mobile Nav -->
     <ul class="mob-menu" id="mobMenu">
-        <li><a href="#home" class="m-link">Home</a></li>
-        <li><a href="#experience" class="m-link">Experience</a></li>
-        <li><a href="#impact" class="m-link">Impact</a></li>
-        <li><a href="#skills" class="m-link">Skills</a></li>
-        <li><a href="#projects" class="m-link">Projects</a></li>
-        <li><a href="#contact" class="m-link">Contact</a></li>
+        <li><a href="#home" class="m-link" data-ga-event="navigation_click" data-ga-label="Home">Home</a></li>
+        <li><a href="#experience" class="m-link" data-ga-event="navigation_click" data-ga-label="Experience">Experience</a></li>
+        <li><a href="#impact" class="m-link" data-ga-event="navigation_click" data-ga-label="Impact">Impact</a></li>
+        <li><a href="#skills" class="m-link" data-ga-event="navigation_click" data-ga-label="Skills">Skills</a></li>
+        <li><a href="#projects" class="m-link" data-ga-event="navigation_click" data-ga-label="Projects">Projects</a></li>
+        <li><a href="#contact" class="m-link" data-ga-event="navigation_click" data-ga-label="Contact">Contact</a></li>
     </ul>
 
     <!-- ══ HOME ═════════════════════════════════════ -->
@@ -114,10 +122,10 @@
                 </p>
 
                 <div class="home-cta">
-                    <a href="files/padmesh_kunwar_v_13.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="files/padmesh_kunwar_v_13.pdf" target="_blank" rel="noopener" class="btn btn-primary" data-ga-event="resume_click" data-ga-label="View Resume">
                         <span>📄</span> View Resume
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
+                    <a href="#contact" class="btn btn-secondary" data-ga-event="cta_click" data-ga-label="Let's Connect">
                         Let's Connect →
                     </a>
                 </div>
@@ -165,17 +173,44 @@
 
         <div class="timeline">
 
+            <!-- Dell Technologies -->
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-co">
+                    Dell Technologies
+                    <span class="tl-pill">Ongoing</span>
+                </div>
+                <div class="tl-role">Senior Software Engineer</div>
+                <div class="tl-meta">
+                    <span class="tl-m">📍 Bengaluru, Karnataka</span>
+                    <span class="tl-m">🗓 Jun 2026 – Ongoing</span>
+                </div>
+                <div class="tl-stack">
+                    <span class="chip">ObjectScale</span>
+                    <span class="chip">Agentic AI</span>
+                    <span class="chip">Devin</span>
+                    <span class="chip">Linux</span>
+                    <span class="chip">Storage</span>
+                </div>
+                <ul class="tl-list">
+                    <li>Worked with the metering component of ObjectScale, handling customer escalations and defects while
+                        delivering <strong>2 features end-to-end</strong>.</li>
+                    <li>Contributed to the agentic AI ecosystem for bug triage, code review, and defect resolution.
+                        Developed <strong>4 skillsets in Devin</strong>, leading to increased developer productivity and
+                        <strong>30% higher sprint velocity</strong>.</li>
+                </ul>
+            </div>
+
             <!-- Barclays -->
             <div class="tl-item">
                 <div class="tl-dot"></div>
                 <div class="tl-co">
                     Barclays
-                    <span class="tl-pill">Ongoing</span>
                 </div>
                 <div class="tl-role">Senior Software Engineer</div>
                 <div class="tl-meta">
                     <span class="tl-m">📍 Pune, Maharashtra</span>
-                    <span class="tl-m">🗓 2022 – Present</span>
+                    <span class="tl-m">🗓 Oct 2022 – May 2026</span>
                 </div>
                 <div class="tl-stack">
                     <span class="chip">Java</span>
@@ -278,7 +313,7 @@
                 <div class="ic-title">GCP Professional Cloud Architect</div>
                 <div class="ic-body">Achieved Professional Cloud Architect certification on Google Cloud Platform —
                     demonstrating mastery in scalable cloud infrastructure design.</div>
-                <a href="./gcp-pca" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                <a href="./gcp-pca" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-ga-event="certificate_click" data-ga-label="GCP Professional Cloud Architect Certificate">
                     View Certificate →
                 </a>
             </div>
@@ -446,7 +481,7 @@
                     <span class="chip">OpenAPI</span>
                 </div>
                 <div class="pc-links">
-                    <a href="https://github.com/padmesh97/openapi-to-mcp/" target="_blank" rel="noopener"
+                    <a href="https://github.com/padmesh97/openapi-to-mcp/" target="_blank" rel="noopener" data-ga-event="project_link_click" data-ga-project="OpenAPI-to-MCP Generator" data-ga-link-type="GitHub"
                         class="btn btn-ghost btn-sm">
                         ⌥ GitHub
                     </a>
@@ -467,11 +502,11 @@
                     <span class="chip">MySQL</span>
                 </div>
                 <div class="pc-links">
-                    <a href="https://padmeshkunwar.me/foodshala" target="_blank" rel="noopener"
+                    <a href="https://padmeshkunwar.me/foodshala" target="_blank" rel="noopener" data-ga-event="project_link_click" data-ga-project="Foodshala" data-ga-link-type="Live"
                         class="btn btn-ghost btn-sm btn-icon">
                         🔗 Live
                     </a>
-                    <a href="https://github.com/padmesh97/foodshala" target="_blank" rel="noopener"
+                    <a href="https://github.com/padmesh97/foodshala" target="_blank" rel="noopener" data-ga-event="project_link_click" data-ga-project="Foodshala" data-ga-link-type="GitHub"
                         class="btn btn-ghost btn-sm">
                         ⌥ GitHub
                     </a>
@@ -493,11 +528,11 @@
                     <span class="chip">MySQL</span>
                 </div>
                 <div class="pc-links">
-                    <a href="https://padmeshkunwar.me/cosmos" target="_blank" rel="noopener"
+                    <a href="https://padmeshkunwar.me/cosmos" target="_blank" rel="noopener" data-ga-event="project_link_click" data-ga-project="Cosmos" data-ga-link-type="Live"
                         class="btn btn-ghost btn-sm btn-icon">
                         🔗 Live
                     </a>
-                    <a href="https://github.com/padmesh97/cosmos" target="_blank" rel="noopener"
+                    <a href="https://github.com/padmesh97/cosmos" target="_blank" rel="noopener" data-ga-event="project_link_click" data-ga-project="Cosmos" data-ga-link-type="GitHub"
                         class="btn btn-ghost btn-sm">
                         ⌥ GitHub
                     </a>
@@ -519,7 +554,7 @@
             </p>
 
             <div class="contact-list">
-                <a href="mailto:kunwarpadmesh@yahoo.com" class="c-item">
+                <a href="mailto:kunwarpadmesh@yahoo.com" class="c-item" data-ga-event="contact_click" data-ga-label="Email">
                     <div class="c-icon">✉</div>
                     <div>
                         <div class="c-lbl">Email</div>
@@ -527,7 +562,7 @@
                     </div>
                     <div class="c-arrow">→</div>
                 </a>
-                <a href="https://linkedin.com/in/padmesh97" target="_blank" rel="noopener" class="c-item">
+                <a href="https://linkedin.com/in/padmesh97" target="_blank" rel="noopener" class="c-item" data-ga-event="social_click" data-ga-label="LinkedIn">
                     <div class="c-icon">
                         <i class="devicon-linkedin-plain" style="font-size:1.2rem;color:#0077b5"></i>
                     </div>
@@ -537,7 +572,7 @@
                     </div>
                     <div class="c-arrow">→</div>
                 </a>
-                <a href="https://github.com/padmesh97" target="_blank" rel="noopener" class="c-item">
+                <a href="https://github.com/padmesh97" target="_blank" rel="noopener" class="c-item" data-ga-event="social_click" data-ga-label="GitHub">
                     <div class="c-icon">
                         <i class="devicon-github-original" style="font-size:1.2rem"></i>
                     </div>
@@ -556,7 +591,7 @@
                 </div>
             </div>
 
-            <a href="mailto:kunwarpadmesh@yahoo.com" class="btn btn-primary">
+            <a href="mailto:kunwarpadmesh@yahoo.com" class="btn btn-primary" data-ga-event="contact_click" data-ga-label="Send a Message">
                 ✉ Send a Message
             </a>
         </div>
@@ -574,6 +609,56 @@
 
     <!-- ══ JAVASCRIPT ═════════════════════════════════ -->
     <script>
+        /* ── GOOGLE ANALYTICS EVENT TRACKING ────────── */
+        /*
+         * GA4 automatically provides approximate geography (country/region/city)
+         * from visitor traffic. This page does not request precise GPS/location.
+         */
+        const trackEvent = (eventName, params = {}) => {
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, params);
+            }
+        };
+
+        // Track explicitly instrumented links/buttons.
+        document.addEventListener('click', (event) => {
+            const target = event.target.closest('a, button');
+            if (!target) return;
+
+            const customEvent = target.dataset.gaEvent;
+            if (!customEvent) return;
+
+            const label = target.dataset.gaLabel ||
+                target.textContent.trim().replace(/\s+/g, ' ').slice(0, 100);
+            const href = target.getAttribute('href');
+
+            trackEvent(customEvent, {
+                link_text: label,
+                link_url: href || undefined,
+                project_name: target.dataset.gaProject || undefined,
+                link_type: target.dataset.gaLinkType || undefined
+            });
+        });
+
+        // Track an actual visit to the Projects section, separate from
+        // simply clicking the Projects navigation link.
+        let projectsSectionTracked = false;
+        const projectsSection = document.getElementById('projects');
+        if (projectsSection) {
+            const projectsViewObs = new IntersectionObserver((entries) => {
+                if (projectsSectionTracked) return;
+                if (entries[0].isIntersecting) {
+                    projectsSectionTracked = true;
+                    trackEvent('section_view', {
+                        section_name: 'Projects'
+                    });
+                    projectsViewObs.disconnect();
+                }
+            }, { threshold: 0.35 });
+
+            projectsViewObs.observe(projectsSection);
+        }
+
         /* ── LOADER ─────────────────────────────────── */
         window.addEventListener('load', () => {
             setTimeout(() => {
